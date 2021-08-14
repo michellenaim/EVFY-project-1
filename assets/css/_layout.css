@@ -1,0 +1,19 @@
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+.container {
+  background: linear-gradient(to right, black, grey);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10vh auto 5vh;
+  grid-template-areas: "header" "main" "footer";
+}

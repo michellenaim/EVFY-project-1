@@ -1,0 +1,12 @@
+@import url("/EVFY-project-1/assets/css/_layout.css");
+@import url("/EVFY-project-1/assets/css/_reset.css");
+
+:root {
+  --desktop-template: "";
+  --tablet-template: "";
+  --mobile-template: "";
+}
+
+.container {
+  color: white;
+}
