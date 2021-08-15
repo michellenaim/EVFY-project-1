@@ -1,10 +1,14 @@
+@import url("/EVFY-project-1/assets/css/_variables.css");
 @import url("/EVFY-project-1/assets/css/_layout.css");
 @import url("/EVFY-project-1/assets/css/_reset.css");
+@import url("/EVFY-project-1/assets/css/_fonts.css");
+@import url("/EVFY-project-1/assets/css/header.css");
+@import url("/EVFY-project-1/assets/css/menu.css");
 
-:root {
-  --desktop-template: "";
-  --tablet-template: "";
-  --mobile-template: "";
+@import url("/EVFY-project-1/assets/css/components/button.css");
+
+* {
+  font-family: TTNormsPro;
 }
 
 .container {

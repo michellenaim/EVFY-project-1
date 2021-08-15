@@ -9,11 +9,15 @@ footer {
 }
 
 .container {
-  background: linear-gradient(to right, black, grey);
+  background: no-repeat center
+      linear-gradient(to bottom, black 7%, 45%, #ffffff00),
+    no-repeat center/100%
+      url("/EVFY-project-1/assets/images/homepage-background.jpg");
+  background-position: 0% 100%;
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh auto 5vh;
+  grid-template-rows: 20vh auto 5vh;
   grid-template-areas: "header" "main" "footer";
 }
