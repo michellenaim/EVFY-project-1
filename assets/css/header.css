@@ -1,10 +1,11 @@
 .top-nav {
   margin-top: 2vh;
   display: flex;
-
   align-items: center;
   height: 100%;
   font-size: 1.2rem;
+  z-index: 9999;
+  background: no-repeat center linear-gradient(to bottom, black, 85%, #ffffff00);
 }
 
 .top-nav > * {
@@ -13,7 +14,8 @@
 
 .logo {
   flex-basis: 20%;
-  background: no-repeat center/30% url("/assets/images/logo_transparent_white.png");
+  background: no-repeat center/30%
+    url("/assets/images/logo_transparent_white.png");
 }
 
 .menu {
@@ -26,7 +28,7 @@
 
 .menu li {
   list-style: none;
-  padding: 1% 2vw;
+  padding: 3%;
   text-align: center;
 }
 
@@ -37,9 +39,8 @@
 }
 
 .top-nav .action-menu {
-  margin: 0 auto;
-  padding-top: 1%;
-  padding-left: 10%;
+  padding-top: 3%;
+  padding-left: 8%;
   align-content: flex-start;
   flex-basis: 20%;
 }
