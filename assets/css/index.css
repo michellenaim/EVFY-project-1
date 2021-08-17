@@ -1,11 +1,11 @@
-@import url("/EVFY-project-1/assets/css/_variables.css");
-@import url("/EVFY-project-1/assets/css/_layout.css");
-@import url("/EVFY-project-1/assets/css/_reset.css");
-@import url("/EVFY-project-1/assets/css/_fonts.css");
-@import url("/EVFY-project-1/assets/css/header.css");
-@import url("/EVFY-project-1/assets/css/menu.css");
+@import url("/assets/css/_variables.css");
+@import url("/assets/css/_layout.css");
+@import url("/assets/css/_reset.css");
+@import url("/assets/css/_fonts.css");
+@import url("/assets/css/header.css");
+@import url("/assets/css/menu.css");
 
-@import url("/EVFY-project-1/assets/css/components/button.css");
+@import url("/assets/css/components/button.css");
 
 * {
   font-family: TTNormsPro;

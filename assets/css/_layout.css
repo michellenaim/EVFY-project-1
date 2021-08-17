@@ -11,8 +11,7 @@ footer {
 .container {
   background: no-repeat center
       linear-gradient(to bottom, black 7%, 45%, #ffffff00),
-    no-repeat center/100%
-      url("/EVFY-project-1/assets/images/homepage-background.jpg");
+    no-repeat center/100% url("/assets/images/homepage-background.jpg");
   background-position: 0% 100%;
   width: 100vw;
   height: 100vh;
