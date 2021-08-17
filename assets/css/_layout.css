@@ -1,0 +1,22 @@
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+.container {
+  background: no-repeat center
+      linear-gradient(to bottom, black 7%, 45%, #ffffff00),
+    no-repeat center/100% url("/assets/images/homepage-background.jpg");
+  background-position: 0% 100%;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh auto 5vh;
+  grid-template-areas: "header" "main" "footer";
+}
