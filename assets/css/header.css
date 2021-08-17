@@ -27,6 +27,7 @@
 .menu li {
   list-style: none;
   padding: 1% 2vw;
+  text-align: center;
 }
 
 .menu li:hover {
