@@ -8,3 +8,7 @@
   cursor: pointer;
   box-shadow: 0px 0px 15px 5px rgba(199, 190, 190, 0.59);
 }
+
+.primary-btn:hover {
+  transform: scale(1.1);
+}
