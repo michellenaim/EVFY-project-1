@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/_reset.css" />
+        <link rel="stylesheet" href="/assets/css/contact.css">
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <div id="contact">
+            <div class="container" id="contact-form">
+                <form action="/contact.php">
+                    <h2 class="form-title text-dark">
+                        To learn more about the EVFY program, and to receive a Level 2 home charger, please fill out the form below.
+                    </h2>
+                    <div class="form-group">
+                        <label for="first-name" class="text-secondary">First name*</label>
+                        <input type="text" class="form-control" id="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name" class="text-secondary">Last name*</label>
+                        <input type="text" class="form-control" id="last-name" >
+                    </div>
+                    <div class="form-group">
+                    <label for="email" class="text-secondary">Email*</label>
+                    <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="text-secondary">Address:</label>
+                        <input type="text" class="form-control" id="address">
+                    </div>
+                    <div class="form-group">
+                        <label for="city" class="text-secondary">City*</label>
+                        <input type="city" class="form-control" id="city">
+                    </div>
+                    <div class="form-group">
+                        <label for="county" class="text-secondary">County*</label>
+                        <input type="text" class="form-control" id="county">
+                    </div>
+                    <div class="form-group">
+                        <label for="zip" class="text-secondary">Zip*</label>
+                        <input type="number" class="form-control" id="zip">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="text-secondary">Phone number*</label>
+                        <input type="number" class="form-control" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="rent-own" class="text-secondary">Rent or Own Property*</label>
+                        <input type="text" class="form-control" id="rent-own">
+                    </div>
+                    <div class="form-group">
+                        <label for="dealership" class="text-secondary">Dealership where car was purchased/leased*</label>
+                        <input type="text" class="form-control" id="dealership">
+                    </div>
+                    <div class="form-group">
+                        <label for="miles-per-year" class="text-secondary">Miles driven per year*</label>
+                        <input type="number" class="form-control" id="miles-per-year">
+                    </div>
+                    <div class="form-group">
+                        <label for="utility-provider" class="text-secondary">Utility Provider*</label>
+                        <input type="text" class="form-control" id="utility-provider">
+                    </div>
+                    <button type="submit" class="btn btn-success">SEND EMAIL</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
