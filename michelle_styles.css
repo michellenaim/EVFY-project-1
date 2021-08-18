@@ -21,6 +21,7 @@
     padding: 1.875rem;
     min-width: 18.75rem;
     font-size: var(--font_size-heading);
+    font-weight: bold;
 }
 
 .roadmap:first-child{
@@ -55,6 +56,7 @@
     color: rgb(30, 169, 30);
     margin-bottom: 1.5rem;
     font-size: var(--font_size-heading);
+    font-weight: bold;
 }
 
 .lifestyle-choices div:nth-child(2) p {
@@ -89,6 +91,7 @@
     color: rgb(30, 169, 30);
     margin-bottom: 1.5rem;
     font-size: var(--font_size-heading);
+    font-weight: bold;
 }
 
 .sustainability-tier p {
