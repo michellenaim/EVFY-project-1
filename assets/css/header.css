@@ -18,6 +18,19 @@
   flex-basis: 20%;
   background: no-repeat center/30%
     url("/assets/images/logo_transparent_white.png");
+  position: relative;
+}
+
+.logo > div {
+  background: transparent;
+  border-radius: 15px;
+  border: 2px solid white;
+  height: 42%;
+  width: 27%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -27%);
 }
 
 .top-nav .action-menu {
