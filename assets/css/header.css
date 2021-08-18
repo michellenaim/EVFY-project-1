@@ -14,14 +14,20 @@
   height: 100%;
 }
 
-.logo {
+.logos {
   flex-basis: 20%;
-  background: no-repeat center/30%
-    url("/assets/images/logo_transparent_white.png");
   position: relative;
 }
 
-.logo > div {
+.logos .logo {
+  position: relative;
+  height: 100%;
+  background: no-repeat center/30%
+    url("/assets/images/logo_transparent_white.png");
+  z-index: 500;
+}
+
+.logos > .shape {
   background: transparent;
   border-radius: 15px;
   border: 2px solid white;
