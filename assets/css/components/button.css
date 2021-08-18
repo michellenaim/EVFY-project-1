@@ -1,8 +1,9 @@
-.login-btn {
+.primary-btn {
   padding: 5px 20px;
   color: white;
   background-color: var(--c_green);
   border-radius: 4px;
   font-size: 1rem;
   border: none;
+  cursor: pointer;
 }
