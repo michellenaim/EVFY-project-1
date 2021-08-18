@@ -183,6 +183,10 @@ body {
     justify-content: center;
 }
 
+.piconi-veggies {
+    margin-right: 15px;
+}
+
 .bird{
     background-color: white;
     min-height: 15rem;
