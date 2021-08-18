@@ -24,20 +24,22 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background: linear-gradient(to bottom, black, var(--c_green));
   width: max-content;
   padding: 10%;
   border-radius: 4px;
   overflow: hidden;
-  display: none;
+  transform: scaleY(0);
   height: auto;
 }
 
 .menu li:hover .sub-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   text-align: left;
+  transition: transform 250ms ease-in;
+  transform: scaleY(1);
 }
 
 .menu li .sub-menu a {
