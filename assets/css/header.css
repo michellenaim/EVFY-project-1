@@ -21,22 +21,24 @@
 
 .logos .logo {
   position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 100%;
   background: no-repeat center/30%
-    url("/assets/images/logo_transparent_white.png");
-  z-index: 500;
+      url("/assets/images/logo_transparent_white.png"),
+    no-repeat 33% 72%/30% url("/assets/images/logo-shape.png");
 }
 
 .logos > .shape {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: 75px;
+  transform: translate(-50%, -50%);
   background: transparent;
   border-radius: 15px;
   border: 2px solid white;
-  height: 42%;
-  width: 27%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-90%, -27%);
 }
 
 .top-nav .action-menu {
