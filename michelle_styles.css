@@ -150,3 +150,73 @@ td:first-child {
 body {
     background-color: #ededed;
 }
+
+/* Parners */
+
+.partners-main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 35rem;
+    background-image: url("/assets/images/iStock-1281885421.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.partners-main-title h1 {
+    font-size: var(--font_size-heading);
+    font-weight: bold;
+    top: 14%;
+    right: 35%;
+    position: absolute;
+}
+
+.piconi {
+    min-height: 15rem;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.piconi-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bird{
+    background-color: white;
+    min-height: 15rem;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.bird img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bird-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sprouts {
+    min-height: 15rem;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.sprouts img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    color: var(--c_green);
+    font-weight: bold;
+    font-size: var(--font_size-details);
+    padding-top: 1rem;
+}
