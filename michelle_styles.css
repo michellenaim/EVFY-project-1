@@ -20,6 +20,7 @@
     border-right: 4px solid white;
     padding: 1.875rem;
     min-width: 18.75rem;
+    font-size: var(--font_size-heading);
 }
 
 .roadmap:first-child{
@@ -34,6 +35,8 @@
 
 .roadmap div p {
     margin-bottom: 2.5rem;
+    font-size: var(--font_size-details);
+
 }
 
 .green-text {
@@ -51,6 +54,11 @@
 .lifestyle-choices div h2{
     color: rgb(30, 169, 30);
     margin-bottom: 1.5rem;
+    font-size: var(--font_size-heading);
+}
+
+.lifestyle-choices div:nth-child(2) p {
+    font-size: var(--font_size-details);
 }
 
 .lifestyle-choices .phone-img {
@@ -80,6 +88,11 @@
 .sustainability-tier h2{
     color: rgb(30, 169, 30);
     margin-bottom: 1.5rem;
+    font-size: var(--font_size-heading);
+}
+
+.sustainability-tier p {
+    font-size: var(--font_size-details);
 }
 
 .sustainability-tier button {
@@ -100,7 +113,7 @@
 }
 
 thead {
-    background: rgb(30, 169, 30);
+    background: #70AD47;
     color: white;
 }
   
@@ -123,14 +136,14 @@ td:first-child {
 }
 
 .fst-row{
-    background-color:#a5d78e;
+    background-color:#d5e3cf;
 }
 
 .sec-row{
-    background-color: #cefeb8;
+    background-color: #ebf1e9;
     height: 5.25rem;
 }
 
 body {
-    background-color:lightgray
+    background-color: #ededed;
 }
