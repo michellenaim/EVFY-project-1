@@ -1,0 +1,209 @@
+/* about section */
+#about{
+    display: flex;
+    min-height: 40rem;
+    background-image: url("assets/images/iStock-1214243583.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+#aboutLogo{
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+#aboutText h1{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: var(--font-family);
+    font-weight: bold;
+}
+
+#aboutText p{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+    font-family: var(--font-family);
+    font-size: var(--font_size-details);
+}
+
+#bubbleImage img{
+    border: rgba(255,255,255,0.7);
+    border-width: 20px;
+    border-style:solid;
+    /* border-radius: 50%; */
+    border-top-left-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -200px;
+    
+}
+
+/* mission section */
+#mission{
+    background-color: rgb(243, 243, 243);
+    min-height: 15rem;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+#mission h4{
+    color: #8cc63f;
+    padding: 40px 50px 20px 100px;
+    font-family: var(--font-family);
+    font-size: var(--font_size-sub-heading);
+}
+
+#mission p{
+    padding: 0 50px 20px 100px;
+    font-family: var(--font-family);
+    font-size: var(--font_size-details);
+}
+
+#mission img{
+    align-items: center;
+}
+
+/* team section */
+#team{
+    background-color: white;
+    min-height: 15rem;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+#team h4{
+    color: #8cc63f;
+    padding: 40px 50px 20px 100px;
+    font-size: var(--font_size-sub-heading);
+    font-family: var(--font-family);
+}
+
+#team p{
+    padding: 0 50px 20px 100px;
+    font-size: var(--font_size-details);
+    font-family: var(--font-family);
+}
+
+/* #team img{
+    padding-left: 100px;
+} */
+
+/* teammember section */
+#teamMember{
+    background-color: white;
+    min-height: 30rem;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.teamphoto, .teamphotos{
+    text-align: center;
+}
+
+.teamphoto img{
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+.teamphotos img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#teamMember h5{
+    color: #8cc63f;
+    font-size: small;
+    font-size: var(--font_size-details);
+    font-family: var(--font-family);
+}
+
+#teamMember p{
+    font-size: small;
+    font-size: var(--font_size-details);
+    font-family: var(--font-family);
+}
+
+/* sustainbility section */
+#sustainability{
+    display: flex;
+    min-height: 40rem;
+    background-image: url("assets/images/iStock-943875208.jpg");
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+#sustainabilityLogo{
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+#sustainability h1{
+    font-size: 60px;
+    margin-top: 30px;
+    color: #000;
+    font-weight: bold;
+    font-family: var(--font-family);
+    margin-left: 50px;
+}
+
+
+/* sustainbility index section */
+#sustainabilityIndex{
+    background-color: rgb(243, 243, 243);
+    min-height: 15rem;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+#sustainabilityIndex h4{
+    color: #8cc63f;
+    padding: 40px 50px 20px 100px;
+    font-size: var(--font_size-sub-heading);
+    font-family: var(--font-family);
+}
+
+#sustainabilityIndex p{
+    padding: 0 50px 20px 100px;
+    font-size: var(--font_size-details);
+    font-family: var(--font-family);
+}
+
+#sustainbilityIndex img{
+    padding-right: 100px;
+}
+
+/* methodology section */
+#methodology{
+    background-color: white;
+    min-height: 15rem;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+#methodology h4{
+    color: #8cc63f;
+    padding: 35px 50px 20px 100px;
+    font-size: var(--font_size-sub-heading);
+    font-family: var(--font-family);
+}
+
+#methodology p{
+    padding: 0 50px 0 100px;
+    font-size: var(--font_size-details);
+    font-family: var(--font-family);
+}
+
+#methodology ul{
+    padding: 0 50px 20px 100px;
+    font-size: var(--font_size-details);
+    font-family: var(--font-family);
+}
+
+#methodology img{
+    padding-left: 100px;
+}
