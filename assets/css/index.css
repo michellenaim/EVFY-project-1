@@ -14,6 +14,10 @@
   font-family: TTNormsPro;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   color: white;
   position: relative;
