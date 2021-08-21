@@ -8,11 +8,11 @@ footer {
   grid-area: footer;
 }
 
-.container {
+.wrapper {
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh auto 5vh;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 20vh auto;
+  grid-template-areas: "header" "main";
 }

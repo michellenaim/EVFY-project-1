@@ -12,3 +12,8 @@
 .primary-btn:hover {
   transform: scale(1.1);
 }
+
+.primary-btn > a {
+  text-decoration: none !important;
+  color: white;
+}
