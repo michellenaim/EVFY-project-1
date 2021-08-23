@@ -27,8 +27,7 @@
   transform: translate(-50%, -50%);
   height: 100%;
   background: no-repeat center/30%
-      url("/assets/images/logo_transparent_white.png"),
-    no-repeat 33% 80%/30% url("/assets/images/logo-shape.png");
+      url("/assets/images/logo_transparent_white.png");
 }
 
 .top-nav .action-menu {

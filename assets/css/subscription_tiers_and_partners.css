@@ -1,7 +1,7 @@
 /* Subscription Tiers */
 
-.section-border {
-    box-shadow: 3px 3px 2px rgb(30, 169, 30, 0.3);
+.sustainability {
+    background-color: rgb(243, 243, 243);
 }
 
 .roadmap{
@@ -31,7 +31,7 @@
 }
 
 .roadmap div:nth-child(2) {
-    padding-left: 15.65rem;
+    padding-left: 10%
 }
 
 .roadmap div p {
@@ -78,7 +78,6 @@
 
 .lifestyle-choices div:nth-child(2) {
     margin-top: 4.6rem;
-    padding-left: 15rem;
 }
 
 .sustainability-tier {
@@ -151,22 +150,26 @@ body {
     background-color: #ededed;
 }
 
-/* Parners */
+/* Partners */
+
+.partners {
+    background-color: rgb(243, 243, 243);
+}
 
 .partners-main-title{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 35rem;
+    min-height: 37rem;
     background-image: url("/assets/images/iStock-1281885421.jpg");
     background-size: cover;
     background-position: bottom;
 }
 
 .partners-main-title h1 {
-    font-size: var(--font_size-heading);
+    font-size: 3.5rem;
     font-weight: bold;
-    top: 14%;
+    top: 10%;
     right: 35%;
 }
 
