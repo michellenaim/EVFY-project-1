@@ -151,21 +151,21 @@
 
 
 /* sustainbility index section */
-#sustainabilityIndex{
+.sustainabilityIndex{
     background-color: rgb(243, 243, 243);
     min-height: 15rem;
     align-items: center;
     padding: 2.5rem;
 }
 
-#sustainabilityIndex h4{
+.sustainabilityIndex h4{
     color: #8cc63f;
     padding: 40px 50px 20px 100px;
     font-size: var(--font_size-sub-heading);
     font-family: var(--font-family);
 }
 
-#sustainabilityIndex p{
+.sustainabilityIndex p{
     padding: 0 50px 20px 100px;
     font-size: var(--font_size-details);
     font-family: var(--font-family);

@@ -18,3 +18,8 @@
 a{
     text-decoration: underline !important;
 }
+
+.sub{
+    text-decoration: none !important;
+    color: white;
+}
