@@ -1,25 +1,26 @@
-#login{
-    background:no-repeat 100%/100% url("/assets/images/login-background.jpg") rgba(242,234,228,255);
-    background-size: cover;
+#login {
+  background: no-repeat 100%/100% url("/assets/images/login-background.jpg")
+    rgba(242, 234, 228, 255);
+  background-size: cover;
 }
-#content{
-    background:transparent;
-    padding-top: 5rem;
-    padding-bottom: 20rem;
+#content {
+  background: transparent;
+  padding-top: 5rem;
+  padding-bottom: 20rem;
 }
-#title{
-    padding-left: 3vw;
-    font-size: 6vw;
+#title {
+  padding-left: 3vw;
+  font-size: 6vw;
 }
-#login-link{
-    padding-left: 3vw;
-    font-size: 3vw;
+#login-link {
+  padding-left: 3vw;
+  font-size: 3vw;
 }
-a{
-    text-decoration: underline !important;
+#login a {
+  text-decoration: underline !important;
 }
 
-.sub{
-    text-decoration: none !important;
-    color: white;
+.sub {
+  text-decoration: none !important;
+  color: white;
 }

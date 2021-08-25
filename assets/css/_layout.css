@@ -1,18 +1,10 @@
-header {
-  grid-area: header;
-}
 main {
   grid-area: main;
 }
-footer {
-  grid-area: footer;
-}
 
 .wrapper {
-  width: 100%;
-  height: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh auto;
-  grid-template-areas: "header" "main";
+  grid-template-rows: 1fr;
+  grid-template-areas: "main";
 }

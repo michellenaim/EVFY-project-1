@@ -2,15 +2,19 @@
 @import url("/assets/css/_layout.css");
 @import url("/assets/css/_reset.css");
 @import url("/assets/css/_fonts.css");
+
+@import url("/assets/css/components/button.css");
+@import url("/assets/css/components/card.css");
+
 @import url("/assets/css/header.css");
 @import url("/assets/css/menu.css");
+
+@import url("/assets/css/landing-section.css");
+
 @import url("/assets/css/about-style.css");
 @import url("/assets/css/subscription_tiers_and_partners.css");
 @import url("/assets/css/login.css");
 @import url("/assets/css/contact.css");
-
-@import url("/assets/css/components/button.css");
-@import url("/assets/css/components/card.css");
 
 * {
   font-family: TTNormsPro;
@@ -20,18 +24,46 @@ html {
   scroll-behavior: smooth;
 }
 
-.wrapper {
-  position: relative;
-  background-color: black;
+body {
+  background-color: #242424;
 }
 
-section#our-mission {
+.wrapper {
+  background-color: black;
+  max-width: min(100vw, 1200px);
+  width: 100%;
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+@media (max-width: 768px) {
+  section {
+    max-width: 99vw;
+  }
+}
+
+main {
   position: relative;
-  background: no-repeat center/100%
-    url("/assets/images/homepage-background.jpg");
-  background-position: 0% 100%;
-  overflow: visible;
-  margin-top: -10vh;
-  color: black;
-  height: 80vh;
+}
+
+.contact-us-card {
+  width: max-content;
+  padding: 0.5% 3%;
+  position: fixed;
+  top: 27%;
+  right: 0;
+  background-color: white;
+  text-align: center;
+  z-index: 999;
+  border-radius: 4px;
+  margin: inherit;
+}
+
+.contact-us-card > div {
+  color: var(--c_green);
+}
+
+.contact-us-card > p {
+  font-weight: 600;
+  margin-bottom: 0.2rem !important;
 }
