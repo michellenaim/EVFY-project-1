@@ -38,6 +38,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  #our-mission .card {
+    font-size: var(--font_size-description);
+  }
+}
+
 #our-mission .card:hover {
   opacity: 1;
 }
