@@ -7,7 +7,8 @@
   --c_black: #011520;
   --c_green: #8cc63f;
   --c_dark-green: #4e7512;
-  --c_dark-gray: #5d6761;
+  --c_dark-green: #4e7512;
+  --bg_gray: #f3f3f3;
 
   --font_size-heading: clamp(1.8rem, 2.5vw, 2.2rem);
   --font_size-sub-heading: 1.8rem;

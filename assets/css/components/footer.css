@@ -1,0 +1,46 @@
+/* Footer */
+footer {
+  padding: 1.875rem 1.25rem 1.25rem;
+  background: linear-gradient(to bottom, #545454 0%, #4f4f4f 50%, #000 100%);
+}
+
+.footer-text {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 33.3%;
+  font-size: var(--font_size-details);
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+.social-media .fa {
+  padding: 5px;
+}
+
+.footer-logo {
+  align-items: flex-end;
+}
+
+.footer-logo img {
+  width: 100%;
+  max-width: 9.375rem;
+}
+
+.disclaimer {
+  width: 100%;
+  font-size: 0.75rem;
+  padding-top: 1.25rem;
+  color: #fff;
+  line-height: 1.688rem;
+  text-align: center;
+}
