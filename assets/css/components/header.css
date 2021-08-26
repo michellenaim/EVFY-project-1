@@ -11,11 +11,11 @@
   padding: 1vh 0;
 }
 
-.logo {
+.top-nav .logo {
   flex-basis: 20%;
   height: 100px;
   width: 100px;
-  background: no-repeat center/30%
+  background: no-repeat center/70%
     url("/assets/images/logo_transparent_white.png");
 }
 
@@ -26,6 +26,17 @@
 }
 
 @media (max-width: 768px) {
+  .top-nav {
+    height: 10vh;
+  }
+
+  .top-nav .logo {
+    width: 4vw;
+    margin-right: 5%;
+    background: no-repeat center/50%
+      url("/assets/images/logo_transparent_white.png");
+  }
+
   .top-nav .action-menu {
     display: none;
   }

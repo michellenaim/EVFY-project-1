@@ -25,10 +25,6 @@
 }
 
 @media (max-width: 768px) {
-  #our-mission .menu {
-    display: none;
-  }
-
   #our-mission .card {
     width: 90vw;
     max-width: 95vw;
@@ -782,7 +778,7 @@
 }
 
 #partners .partner3 .partner-images div:first-child {
-  background: no-repeat center/100% url("/assets/images/sprouts-logo.png");
+  background: no-repeat center/70% url("/assets/images/sprouts-logo.png");
 }
 
 @media (max-width: 768px) {
