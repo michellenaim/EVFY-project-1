@@ -570,7 +570,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70vh;
+  height: 50vh;
   background-color: var(--bg_gray);
   padding: 2.5rem;
 }
@@ -611,7 +611,7 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--bg_gray);
-  height: 80vh;
+  height: 60vh;
   width: 100%;
   font-family: var(--font-family);
   padding: 2.5rem;
@@ -678,6 +678,7 @@
   border-radius: 4px;
   font-size: var(--font_size-details);
   color: white;
+  cursor: pointer;
 }
 
 .fst-row {
@@ -687,6 +688,12 @@
 .sec-row {
   background-color: #ebf1e9;
   height: 5.25rem;
+}
+
+@media (max-width: 870px) {
+  #sustainability-tier .sustainability-table {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
