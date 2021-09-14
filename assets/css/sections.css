@@ -78,7 +78,7 @@
 }
 
 #aboutText {
-  padding: 12rem 7%;
+  padding: 7rem 7%;
   padding-right: 2%;
   padding-bottom: 5rem;
   display: flex;
@@ -90,12 +90,16 @@
 #aboutText h1 {
   font-family: var(--font-family);
   font-weight: bold;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
 }
 
 #aboutText p {
   flex-basis: 80%;
   font-family: var(--font-family);
   font-size: var(--font_size-details);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
 }
 
 #bubbleImage {
@@ -246,6 +250,7 @@
   flex-wrap: wrap;
   gap: 7%;
   padding: 0 7%;
+  padding-bottom: 25px;
 }
 
 @media (max-width: 768px) {
@@ -318,11 +323,12 @@
 
 #sustainability h1 {
   font-size: 60px;
-  margin-top: 30px;
+  margin-top: 120px;
   color: white;
   font-weight: bold;
   font-family: var(--font-family);
   margin-left: 50px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
