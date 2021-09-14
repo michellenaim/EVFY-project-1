@@ -530,7 +530,7 @@
 }
 
 .roadmap-text {
-  flex-basis: 60%;
+  flex-basis: 70%;
   text-align: justify;
 }
 
@@ -545,7 +545,7 @@
 
 .roadmap-text p {
   margin: 5% 0;
-  font-size: var(--font_size-description);
+  font-size: var(--font_size-details);
 }
 
 .roadmap-text span.green-text {
@@ -576,7 +576,7 @@
 }
 
 #lifestyle .lifestyle-image {
-  flex-basis: 40%;
+  flex-basis: 35%;
   height: 60vh;
   background: no-repeat center/40% url("/assets/images/Picture4.png");
 }
@@ -775,11 +775,16 @@
 
 #partners :is(.partner1, .partner2, .partner3) .partner-text {
   flex-basis: 60%;
+  padding-right: 4rem;
 }
 
 #partners .partner-images > div {
   flex-basis: 100%;
   height: 30vh;
+}
+
+.partner3 .partner-images {
+  flex-basis: 90%;
 }
 
 #partners .partner1 .partner-images div:first-child {
