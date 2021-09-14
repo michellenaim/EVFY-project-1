@@ -141,6 +141,10 @@
   flex-basis: 100%;
 }
 
+#mission .mission-text {
+  padding-bottom: 1rem;
+}
+
 #mission .mission-image {
   width: 10rem;
   height: 20rem;
@@ -191,6 +195,10 @@
 
 #team > .team-text {
   flex-basis: 40%;
+}
+
+#team > .team-text h4 {
+  padding-bottom: 1rem;
 }
 
 #team > .team-image {
@@ -802,7 +810,7 @@
 }
 
 #partners .partner3 .partner-images div:first-child {
-  background: no-repeat center/70% url("/assets/images/sprouts-logo.png");
+  background: no-repeat center/60% url("/assets/images/sprouts-logo.png");
 }
 
 @media (max-width: 768px) {
