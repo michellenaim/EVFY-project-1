@@ -26,7 +26,6 @@ body {
 
 .wrapper {
   background-color: black;
-  /* max-width: min(100vw, 1200px); */
   width: 100%;
   margin: 0 auto;
   overflow-y: scroll;
@@ -40,7 +39,6 @@ body {
 
 main {
   position: relative;
-  max-width: min(100vw, 1300px);
   width: 100%;
   margin: 0 auto;
   overflow-y: scroll;

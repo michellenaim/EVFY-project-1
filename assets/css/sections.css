@@ -5,6 +5,7 @@
     url("/assets/images/homepage-background.jpg");
   background-position: 0% 100%;
   color: black;
+  min-height: 50rem;
 }
 
 #our-mission {
@@ -774,8 +775,9 @@
   #sustainability-tier .sustainability-table {
     width: 100%;
   }
-#sustainability-tier .sustainability-table thead tr:nth-child(odd) {
-  background-color: var(--c_green);
+  #sustainability-tier .sustainability-table thead tr:nth-child(odd) {
+    background-color: var(--c_green);
+  }
 }
 
 @media (max-width: 768px) {
