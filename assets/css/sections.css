@@ -24,26 +24,6 @@
   margin: 5% auto;
 }
 
-@media (max-width: 768px) {
-  #our-mission .card {
-    width: 90vw;
-    max-width: 95vw;
-    height: 70vh;
-    margin: 5% auto;
-    padding: 2% 15%;
-  }
-
-  #our-mission .card {
-    font-size: var(--font_size-details);
-  }
-}
-
-@media (max-width: 500px) {
-  #our-mission .card {
-    font-size: var(--font_size-description);
-  }
-}
-
 #our-mission .card:hover {
   opacity: 1;
 }
@@ -52,12 +32,55 @@
   font-weight: bold;
   font-size: var(--font_size-heading);
   border-bottom: 5px solid var(--c_green);
+  padding-bottom: 10px;
   margin-bottom: 7%;
 }
 
 #our-mission .card p {
   text-align: left;
   margin-bottom: 5%;
+  font-size: var(--font_size-details);
+}
+
+@media (max-width: 768px) {
+  #our-mission .card {
+    width: 100%;
+    height: auto;
+    max-width: 85%;
+    margin: 5rem 2rem;
+    padding: 3rem 2rem;
+    font-size: var(--font_size-details);
+  }
+
+  #our-mission .card .card-title {
+    width: 15rem;
+    font-size: calc(var(--font_size-sub-heading) - 0.2rem);
+  }
+
+  #our-mission .card p:last-of-type {
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  #our-mission {
+    height: auto;
+  }
+
+  #our-mission .card {
+    max-width: 85%;
+    font-size: var(--font_size-description);
+    margin: 5rem 2rem;
+    padding: 3rem 2rem;
+  }
+
+  #our-mission .card .card-title {
+    font-size: calc(var(--font_size-sub-heading) - 0.2rem);
+  }
+
+  #our-mission .card p:last-of-type {
+    margin-bottom: 10%;
+  }
 }
 
 /* about section */
@@ -121,8 +144,53 @@
 }
 
 @media (max-width: 768px) {
+  #about #aboutText {
+    margin: 5rem 0.5rem;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+    box-shadow: 0px 0px 30px 5px var(--c_green);
+  }
+
+  #about #aboutText:hover {
+    opacity: 1;
+  }
+
+  #about #aboutText h1 {
+    font-weight: 550;
+  }
+
+  #about #aboutText p {
+    text-align: left;
+  }
+
+  #about p {
+    font-size: var(--font_size-details);
+  }
+
   #bubbleImage {
     display: none;
+  }
+
+  #aboutLogo {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #about #aboutText {
+    margin: 5rem 0.5rem;
+    padding: 3rem 2rem;
+  }
+
+  #about p {
+    font-size: var(--font_size-details);
+  }
+
+  #about #aboutText h1 {
+    font-weight: 500;
   }
 }
 
@@ -274,7 +342,7 @@
   }
 
   .teamphoto img {
-    width: 400px;
+    width: 300px;
   }
 
   .teamphoto h5 {
@@ -564,7 +632,7 @@
 @media (max-width: 768px) {
   #roadmap {
     flex-direction: column;
-    height: 60vh;
+    height: auto;
   }
   .roadmap-heading h1 {
     border-right: 0;
@@ -602,6 +670,10 @@
 }
 
 @media (max-width: 768px) {
+  #lifestyle {
+    height: auto;
+  }
+
   #lifestyle .lifestyle-image {
     flex-basis: 100%;
     background: no-repeat center/60% url("/assets/images/Picture4.png");
@@ -689,11 +761,11 @@
   cursor: pointer;
 }
 
-.fst-row {
+#sustainability-tier .sustainability-table tr:nth-child(odd) {
   background-color: #d5e3cf;
 }
 
-.sec-row {
+#sustainability-tier .sustainability-table tr:nth-child(even) {
   background-color: #ebf1e9;
   height: 5.25rem;
 }
@@ -702,9 +774,17 @@
   #sustainability-tier .sustainability-table {
     width: 100%;
   }
+#sustainability-tier .sustainability-table thead tr:nth-child(odd) {
+  background-color: var(--c_green);
 }
 
 @media (max-width: 768px) {
+  #sustainability-tier {
+    padding: 0.5rem;
+    height: auto;
+    overflow-x: scroll;
+  }
+
   #sustainability-tier > p {
     width: 90%;
     margin: 2% 0;
@@ -712,6 +792,7 @@
 
   #sustainability-tier .sustainability-table {
     width: 100%;
+    font-size: calc(var(--font_size-description) - 0.2rem);
   }
 
   #sustainability-tier td p {
@@ -719,12 +800,13 @@
     font-size: calc(var(--font_size-description) - 0.2rem);
   }
 
-  #sustainability-tier td:first-child {
-    font-size: var(--font_size-description);
+  .sec-row {
+    font-size: calc(var(--font_size-description) - 0.2rem);
   }
 
-  .sec-row {
-    font-size: calc(var(--font_size-description) - 0.1rem);
+  #sustainability-tier button {
+    margin: 2%;
+    padding: 0.1rem 1rem;
   }
 }
 
@@ -888,9 +970,14 @@
 }
 
 @media (max-width: 900px) {
+  #contact {
+    padding: 0.5rem;
+  }
+
   #contact .contact-form {
     flex-basis: 100%;
     width: 100%;
+    padding: 0.7rem;
   }
 }
 

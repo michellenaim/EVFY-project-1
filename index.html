@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/assets/css/index.css" />
 </head>
 
-<body>
+<body ontouchstart="">
   <div class="wrapper">
     <main>
       <div class="contact-us-card">
@@ -25,7 +25,8 @@
             <li>
               About EVFY
               <div class="sub-menu">
-                <a href="#mission">Our Mission</a><a href="#team">Our Team</a>
+                <a href="#mission">Our Mission</a>
+                <a href="#team">Our Team</a>
               </div>
             </li>
             <li>
@@ -45,8 +46,12 @@
             </li>
             <li><a class="sub" href="#contact">Contact Us</a></li>
           </ul>
+
           <div class="action-menu">
             <button class="primary-btn"><a href="#login">Login</a></button>
+          </div>
+          <div class="hamburger-icon">
+            <div class="hamburger"></div>
           </div>
         </header>
         <div class="card">
@@ -424,9 +429,9 @@
       </section>
     </main>
     <footer>
-      <div class="footer-text">
-        <div class="section">
-          <p class="section-title">Customer Service Support:</p>
+      <div class="footer-content">
+        <div class="footer-info">
+          <p class="footer-title">Customer Service Support:</p>
           <p>1-877-GET-EVFY</p>
           <p>info@ev-fy.com</p>
           <div class="social-media">
@@ -436,13 +441,13 @@
             <i class="fa fa-instagram"></i>
           </div>
         </div>
-        <div class="section">
-          <p class="section-title">Where to Find Us:</p>
+        <div class="footer-info">
+          <p class="footer-title">Where to Find Us:</p>
           <p>EVFY, Inc.</p>
           <p>4360 Park Terrace Dr. Suite 100,</p>
           <p>Westlake Village, CA 91361</p>
         </div>
-        <div class="section footer-logo">
+        <div class="sectfooter-infoion footer-logo">
           <img src="/assets/images/Electrify_your_EV.png" alt="">
         </div>
       </div>
@@ -451,7 +456,7 @@
       </div>
     </footer>
   </div>
-
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>
