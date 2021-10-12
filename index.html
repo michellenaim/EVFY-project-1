@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width = device-width, initial-scale = 1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <title>EVFY</title>
   <link rel="stylesheet" href="/assets/css/index.css" />
 </head>
@@ -370,59 +371,68 @@
       </section>
 
       <section id="contact">
-        <form class="contact-form" action="/contact.php">
+        <form class="contact-form" method="post" action="/contact.php" @submit="checkForm" id="form">
           <h2 class="title">
             To learn more about the EVFY program, and to receive a Level 2 home charger, please fill out the form
             below.
           </h2>
+          <p v-if="errors.length" id="error-box">
+            <ul>
+              <li v-for="error in errors" id="contact-errors">{{ error }}</li>
+            </ul>
+          </p>
           <div class="form-group">
-            <label for="first-name" class="text-secondary">First name</label>
-            <input type="text" class="form-control" id="first-name">
+            <label for="firstname" class="text-secondary">First name</label>
+            <input name="firstname" type="text" class="form-control" id="first-name" v-model="firstname">
           </div>
           <div class="form-group">
-            <label for="last-name" class="text-secondary">Last name</label>
-            <input type="text" class="form-control" id="last-name">
+            <label for="lastname" class="text-secondary">Last name</label>
+            <input name="lastname" type="text" class="form-control" id="last-name" v-model="lastname">
           </div>
           <p id="address-title">Address:</p>
           <div class="form-group">
-            <label for="address" class="text-secondary">Street</label>
-            <input type="text" class="form-control" id="address">
+            <label for="street" class="text-secondary">Street</label>
+            <input name="street" type="text" class="form-control" id="street" v-model="street">
           </div>
           <div class="form-group">
             <label for="city" class="text-secondary">City</label>
-            <input type="city" class="form-control" id="city">
+            <input name="city" type="text" class="form-control" id="city" v-model="city">
           </div>
           <div class="form-group">
-            <label for="county" class="text-secondary">State</label>
-            <input type="text" class="form-control" id="county">
+            <label for="state" class="text-secondary">State</label>
+            <input name="state" type="text" class="form-control" id="state" v-model="state">
           </div>
           <div class="form-group">
-            <label for="county" class="text-secondary">State</label>
-            <input type="text" class="form-control" id="county">
+            <label for="country" class="text-secondary">Country</label>
+            <input name="country" type="text" class="form-control" id="country" v-model="country">
           </div>
           <div class="form-group">
             <label for="zip" class="text-secondary">Zip</label>
-            <input type="number" class="form-control" id="zip">
+            <input name="zip" type="number" class="form-control" id="zip" v-model="zip">
           </div>
           <div class="form-group">
             <label for="phone" class="text-secondary">Cell phone</label>
-            <input type="number" class="form-control" id="phone">
+            <input name="phone" type="number" class="form-control" id="phone" v-model="phone">
           </div>
           <div class="form-group">
             <label for="email" class="text-secondary">Email</label>
-            <input type="email" class="form-control" id="email">
+            <input name="email" type="email" class="form-control" id="email" v-model="email">
           </div>
           <div class="form-group randomcode">
-            <label for="rent-own" class="text-secondary">Enter code as seen:</label>
-            <input type="text" class="form-control" name="randomcode" id="codeentered">
+            <label for="randomcode" class="text-secondary">Enter code as seen:</label>
+            <input name="randomcode" type="text" class="form-control" id="codeentered">
             <p id="codes"></p>
           </div>
+          <span id='code-error'></span>
           <div class="contact-buttons">
             <button type="reset" class="reset-btn ">Reset</button>
             <button type="submit" class="primary-btn " id="submit">Send</button>
           </div>
         </form>
       </section>
+
+
+      
     </main>
     <footer>
       <div class="footer-content">
@@ -454,5 +464,6 @@
   </div>
   <script src="assets/js/index.js"></script>
   <script src="assets/js/captcha.js"></script>
+  <script src="assets/js/contact-form.js"></script>
 </body>
 </html>

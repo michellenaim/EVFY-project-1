@@ -43,6 +43,15 @@
   margin-left: 2rem;
 }
 
+#error-box {
+  padding: 0.5rem;
+}
+
+#contact-errors {
+  color: red;
+  padding: 0.2rem;
+}
+
 @media (max-width: 768px) {
   .form-group label {
     flex-basis: 25%;
