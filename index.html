@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="/assets/css/index.css" />
 </head>
 
-<body ontouchstart="">
+<body ontouchstart="" onLoad="disableButton(true)">
   <div class="wrapper">
     <main>
       <div class="contact-us-card">
@@ -376,54 +376,51 @@
             below.
           </h2>
           <div class="form-group">
-            <label for="first-name" class="text-secondary">First name*</label>
+            <label for="first-name" class="text-secondary">First name</label>
             <input type="text" class="form-control" id="first-name">
           </div>
           <div class="form-group">
-            <label for="last-name" class="text-secondary">Last name*</label>
+            <label for="last-name" class="text-secondary">Last name</label>
             <input type="text" class="form-control" id="last-name">
           </div>
+          <p id="address-title">Address:</p>
           <div class="form-group">
-            <label for="email" class="text-secondary">Email*</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="form-group">
-            <label for="address" class="text-secondary">Address:</label>
+            <label for="address" class="text-secondary">Street</label>
             <input type="text" class="form-control" id="address">
           </div>
           <div class="form-group">
-            <label for="city" class="text-secondary">City*</label>
+            <label for="city" class="text-secondary">City</label>
             <input type="city" class="form-control" id="city">
           </div>
           <div class="form-group">
-            <label for="county" class="text-secondary">County*</label>
+            <label for="county" class="text-secondary">State</label>
             <input type="text" class="form-control" id="county">
           </div>
           <div class="form-group">
-            <label for="zip" class="text-secondary">Zip*</label>
+            <label for="county" class="text-secondary">State</label>
+            <input type="text" class="form-control" id="county">
+          </div>
+          <div class="form-group">
+            <label for="zip" class="text-secondary">Zip</label>
             <input type="number" class="form-control" id="zip">
           </div>
           <div class="form-group">
-            <label for="phone" class="text-secondary">Phone number*</label>
+            <label for="phone" class="text-secondary">Cell phone</label>
             <input type="number" class="form-control" id="phone">
           </div>
           <div class="form-group">
-            <label for="rent-own" class="text-secondary">Rent or Own Property*</label>
-            <input type="text" class="form-control" id="rent-own">
+            <label for="email" class="text-secondary">Email</label>
+            <input type="email" class="form-control" id="email">
           </div>
-          <div class="form-group">
-            <label for="dealership" class="text-secondary">Dealership where car was purchased/leased*</label>
-            <input type="text" class="form-control" id="dealership">
+          <div class="form-group randomcode">
+            <label for="rent-own" class="text-secondary">Enter code as seen:</label>
+            <input type="text" class="form-control" name="randomcode" id="codeentered">
+            <p id="codes"></p>
           </div>
-          <div class="form-group">
-            <label for="miles-per-year" class="text-secondary">Miles driven per year*</label>
-            <input type="number" class="form-control" id="miles-per-year">
+          <div class="contact-buttons">
+            <button type="reset" class="reset-btn ">Reset</button>
+            <button type="submit" class="primary-btn " id="submit">Send</button>
           </div>
-          <div class="form-group">
-            <label for="utility-provider" class="text-secondary">Utility Provider*</label>
-            <input type="text" class="form-control" id="utility-provider">
-          </div>
-          <button type="submit" class="primary-btn ">SEND EMAIL</button>
         </form>
       </section>
     </main>
@@ -456,6 +453,6 @@
     </footer>
   </div>
   <script src="assets/js/index.js"></script>
+  <script src="assets/js/captcha.js"></script>
 </body>
-
 </html>
