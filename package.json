@@ -1,0 +1,21 @@
+{
+  "name": "EVFY Gold Project",
+  "version": "1.0.0",
+  "description": "EVFY Gold Project",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon ./start.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http-auth": "^4.1.9",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
