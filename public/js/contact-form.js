@@ -1,5 +1,5 @@
-const emailRe =
-  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+// const emailRe =
+//   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 const form = new Vue({
   el: "#form",
@@ -40,12 +40,12 @@ const form = new Vue({
       if (!this.zip) this.errors.push("Please enter your zip code.");
       if (!this.phone) this.errors.push("Please enter your phone number.");
       if (!this.email) this.errors.push("Please enter your email.");
-      if (this.email && emailRe.test(this.email))
-        this.errors.push("Please enter a valid email.");
+      if (this.email) this.errors.push("Please enter a valid email.");
       if (this.phone && this.phone.length >= 1 && this.phone.length < 10)
         this.errors.push("Phone number should be 10 digits.");
       if (this.zip && this.zip.length != 5)
         this.errors.push("Zip code should be 5 digits.");
+      this.$ref.form.submit();
     },
   },
 });
