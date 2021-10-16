@@ -1,7 +1,7 @@
-@import url("/assets/css/shared/_fonts.css");
-@import url("/assets/css/shared/_layout.css");
-@import url("/assets/css/shared/_reset.css");
-@import url("/assets/css/shared/_variables.css");
+@import url("/public/css/shared/_fonts.css");
+@import url("/public/css/shared/_layout.css");
+@import url("/public/css/shared/_reset.css");
+@import url("/public/css/shared/_variables.css");
 
 @import url("/assets/css/components/button.css");
 @import url("/assets/css/components/card.css");
@@ -11,7 +11,7 @@
 @import url("/assets/css/components/menu.css");
 @import url("/assets/css/components/login.css");
 
-@import url("/assets/css/sections.css");
+@import url("/public/css/sections.css");
 
 * {
   font-family: TTNormsPro;

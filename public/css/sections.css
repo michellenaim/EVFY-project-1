@@ -2,7 +2,7 @@
 #our-mission {
   position: relative;
   background: no-repeat center/cover
-    url("/assets/images/homepage-background.jpg");
+    url("/public/images/homepage-background.jpg");
   background-position: 0% 100%;
   color: black;
   min-height: 50rem;
@@ -92,7 +92,7 @@
   display: flex;
   justify-content: space-around;
   align-items: stretch;
-  background: no-repeat center/cover url("/assets/images/iStock-1214243583.jpg");
+  background: no-repeat center/cover url("/public/images/iStock-1214243583.jpg");
 }
 
 #aboutLogo {
@@ -132,7 +132,7 @@
   position: relative;
   top: -10vh;
   right: 0;
-  background: no-repeat center/cover url("/assets/images/iStock-9479592081.jpg");
+  background: no-repeat center/cover url("/public/images/iStock-9479592081.jpg");
   background-clip: content-box;
   border: rgba(255, 255, 255, 0.7);
   border-width: 20px;
@@ -217,7 +217,7 @@
 #mission .mission-image {
   width: 10rem;
   height: 20rem;
-  background: no-repeat center/100% url("/assets/images/iStock-533578039.jpg");
+  background: no-repeat center/100% url("/public/images/iStock-533578039.jpg");
 }
 
 @media (max-width: 768px) {
@@ -274,7 +274,7 @@
   flex-basis: 50%;
   width: 10rem;
   height: 20rem;
-  background: no-repeat center/cover url("/assets/images/iStock-537599600.jpg");
+  background: no-repeat center/cover url("/public/images/iStock-537599600.jpg");
 }
 
 @media (max-width: 768px) {
@@ -386,7 +386,7 @@
   justify-content: start;
   background: no-repeat center/100%
       linear-gradient(to bottom, black, 55%, #ffffff00),
-    no-repeat center/cover url("/assets/images/Picture1.png");
+    no-repeat center/cover url("/public/images/Picture1.png");
 }
 
 #sustainabilityLogo {
@@ -446,7 +446,7 @@
 #sustainability-index > .sustainability-index-image {
   flex-basis: 45%;
   height: 50vh;
-  background: no-repeat center/110% url("/assets/images/iStock-1295057140.jpg");
+  background: no-repeat center/110% url("/public/images/iStock-1295057140.jpg");
 }
 
 @media (max-width: 768px) {
@@ -516,7 +516,7 @@
 #methodology .methodology-image {
   flex-basis: 25%;
   height: 40vh;
-  background: no-repeat center/cover url("/assets/images/iStock-956436966.jpg");
+  background: no-repeat center/cover url("/public/images/iStock-956436966.jpg");
 }
 
 #methodology .methodology-text {
@@ -554,7 +554,7 @@
   #methodology .methodology-image {
     flex-basis: 70%;
     width: 100%;
-    background: no-repeat center/50% url("/assets/images/iStock-956436966.jpg");
+    background: no-repeat center/50% url("/public/images/iStock-956436966.jpg");
   }
 
   #methodology > .methodology-text {
@@ -597,7 +597,7 @@
   background: no-repeat center/cover
       linear-gradient(to bottom, rgba(4, 4, 4, 0.52), rgba(0, 0, 0, 0.73)),
     no-repeat center/cover
-      url("/assets/images/GettyImages-1050959030-654143af4f7a4f4eaff98cbc1b9fc7a2.webp");
+      url("/public/images/GettyImages-1050959030-654143af4f7a4f4eaff98cbc1b9fc7a2.webp");
   color: white;
   padding: 2.5rem;
 }
@@ -655,7 +655,7 @@
 #lifestyle .lifestyle-image {
   flex-basis: 35%;
   height: 60vh;
-  background: no-repeat center/40% url("/assets/images/Picture4.png");
+  background: no-repeat center/40% url("/public/images/Picture4.png");
 }
 
 .lifestyle-text {
@@ -677,7 +677,7 @@
 
   #lifestyle .lifestyle-image {
     flex-basis: 100%;
-    background: no-repeat center/60% url("/assets/images/Picture4.png");
+    background: no-repeat center/60% url("/public/images/Picture4.png");
   }
 
   #lifestyle .lifestyle-text {
@@ -818,7 +818,7 @@
   justify-content: center;
   align-items: center;
   min-height: 30rem;
-  background-image: url("/assets/images/iStock-1281885421.jpg");
+  background-image: url("/public/images/iStock-1281885421.jpg");
   background-size: cover;
   background-position: bottom;
 }
@@ -880,21 +880,21 @@
 }
 
 #partners .partner1 .partner-images div:first-child {
-  background: no-repeat center/100% url("/assets/images/piconi-veggies.jpg");
+  background: no-repeat center/100% url("/public/images/piconi-veggies.jpg");
 }
 #partners .partner1 .partner-images div:last-child {
-  background: no-repeat center/80% url("/assets/images/piconi-farms-logo.png");
+  background: no-repeat center/80% url("/public/images/piconi-farms-logo.png");
 }
 
 #partners .partner2 .partner-images div:first-child {
-  background: no-repeat center/100% url("/assets/images/EB-Logo-Parts-074.png");
+  background: no-repeat center/100% url("/public/images/EB-Logo-Parts-074.png");
 }
 #partners .partner2 .partner-images div:last-child {
-  background: no-repeat center/80% url("/assets/images/early-bird-wines.png");
+  background: no-repeat center/80% url("/public/images/early-bird-wines.png");
 }
 
 #partners .partner3 .partner-images div:first-child {
-  background: no-repeat center/60% url("/assets/images/sprouts-logo.png");
+  background: no-repeat center/60% url("/public/images/sprouts-logo.png");
 }
 
 @media (max-width: 768px) {
@@ -917,7 +917,7 @@
 
 /* See-index section */
 #see-index {
-  background: no-repeat center/cover url("/assets/images/login-background.jpg");
+  background: no-repeat center/cover url("/public/images/login-background.jpg");
 }
 
 #see-index .content {
@@ -947,7 +947,7 @@
   height: max-content;
   padding: 2.5rem;
   background: no-repeat center/cover
-    url("/assets/images/contact_us_background.jpg");
+    url("/public/images/contact_us_background.jpg");
 }
 
 #contact .contact-form .title {
@@ -958,7 +958,7 @@
 
 #contact .contact-form {
   flex-basis: 70%;
-  width: 50%;
+  width: 40%;
   height: max-content;
   padding: 2.5rem;
   background-color: var(--bg_gray);

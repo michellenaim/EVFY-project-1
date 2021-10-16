@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width = device-width, initial-scale = 1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <title>EVFY</title>
-  <link rel="stylesheet" href="/assets/css/index.css" />
+  <link rel="stylesheet" type="text/css" href="./public/css/index.css" />
 </head>
 
 <body ontouchstart="">
@@ -34,7 +35,7 @@
                 <a href="#sustainability-index">The Index</a><a href="#methodology">Methodology</a>
               </div>
             </li>
-            <li><a class="sub" href="#roadmap">Subscription Tiers</a></li>
+            <li><a class="sub" href="#roadmap">Sustainability Index</a></li>
             <li>
               <a href="#partners-section">Our Partners</a>
               <div class="sub-menu">
@@ -205,49 +206,49 @@
 
       <section id="team-member">
         <div class="teamphoto">
-          <img src="assets/images/marco.jpg" alt="Marco" width="150px" />
+          <img src="./public/images/marco.jpg" alt="Marco" width="150px" />
           <div>
             <h5>Marco Terruzzin</h5>
             <p>Founder - CEO</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="assets/images/andrea.jpg" alt="Andrea" width="150px" />
+          <img src="/public/images/andrea.jpg" alt="Andrea" width="150px" />
           <div>
             <h5>Andrea Pedretti</h5>
             <p>Co-Founder - CTO</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="assets/images/julie.jpg" alt="Julie" width="150px" />
+          <img src="/public/images/julie.jpg" alt="Julie" width="150px" />
           <div>
             <h5>Julie Sparacio</h5>
             <p>VP, Marketing & Customer Growth</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="assets/images/andrzej.jpg" alt="Andrzej" width="150px" />
+          <img src="/public/images/andrzej.jpg" alt="Andrzej" width="150px" />
           <div>
             <h5>Andrzej Skoskiewicz</h5>
             <p>VP, Engineering</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="assets/images/daniel.jpg" alt="Marco" width="150px" />
+          <img src="/public/images/daniel.jpg" alt="Marco" width="150px" />
           <div>
             <h5>Daniel Han</h5>
             <p>VP, Strategy & BD</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="assets/images/laetitia.jpg" alt="laetitia" width="150px" />
+          <img src="/public/images/laetitia.jpg" alt="laetitia" width="150px" />
           <div>
             <h5>Laetitia Lee</h5>
             <p>VP, Product</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="assets/images/gianromano.png" alt="gianromano" width="150px" />
+          <img src="/public/images/gianromano.png" alt="gianromano" width="150px" />
           <div>
             <h5>Gianromano Piconi</h5>
             <p>Director, Operations</p>
@@ -442,62 +443,68 @@
       </section>
 
       <section id="contact">
-        <form class="contact-form" action="/contact.php">
+        <form class="contact-form" method="post" action="." @submit="checkForm" id="form" ref="form">
           <h2 class="title">
             To learn more about the EVFY program, and to receive a Level 2 home charger, please fill out the form
             below.
           </h2>
+          <p v-if="errors.length" id="error-box">
+            <ul>
+              <li v-for="error in errors" id="contact-errors">{{ error }}</li>
+            </ul>
+          </p>
           <div class="form-group">
-            <label for="first-name" class="text-secondary">First name*</label>
-            <input type="text" class="form-control" id="first-name">
+            <label for="firstname" class="text-secondary">First name</label>
+            <input name="firstname" type="text" class="form-control" id="first-name" v-model="firstname">
           </div>
           <div class="form-group">
-            <label for="last-name" class="text-secondary">Last name*</label>
-            <input type="text" class="form-control" id="last-name">
+            <label for="lastname" class="text-secondary">Last name</label>
+            <input name="lastname" type="text" class="form-control" id="last-name" v-model="lastname">
+          </div>
+          <p id="address-title">Address:</p>
+          <div class="form-group">
+            <label for="street" class="text-secondary">Street</label>
+            <input name="street" type="text" class="form-control" id="street" v-model="street">
           </div>
           <div class="form-group">
-            <label for="email" class="text-secondary">Email*</label>
-            <input type="email" class="form-control" id="email">
+            <label for="city" class="text-secondary">City</label>
+            <input name="city" type="text" class="form-control" id="city" v-model="city">
           </div>
           <div class="form-group">
-            <label for="address" class="text-secondary">Address:</label>
-            <input type="text" class="form-control" id="address">
+            <label for="state" class="text-secondary">State</label>
+            <input name="state" type="text" class="form-control" id="state" v-model="state">
           </div>
           <div class="form-group">
-            <label for="city" class="text-secondary">City*</label>
-            <input type="city" class="form-control" id="city">
+            <label for="country" class="text-secondary">Country</label>
+            <input name="country" type="text" class="form-control" id="country" v-model="country">
           </div>
           <div class="form-group">
-            <label for="county" class="text-secondary">County*</label>
-            <input type="text" class="form-control" id="county">
+            <label for="zip" class="text-secondary">Zip</label>
+            <input name="zip" type="number" class="form-control" id="zip" v-model="zip">
           </div>
           <div class="form-group">
-            <label for="zip" class="text-secondary">Zip*</label>
-            <input type="number" class="form-control" id="zip">
+            <label for="phone" class="text-secondary">Cell phone</label>
+            <input name="phone" type="number" class="form-control" id="phone" v-model="phone">
           </div>
           <div class="form-group">
-            <label for="phone" class="text-secondary">Phone number*</label>
-            <input type="number" class="form-control" id="phone">
+            <label for="email" class="text-secondary">Email</label>
+            <input name="email" type="email" class="form-control" id="email" v-model="email">
           </div>
-          <div class="form-group">
-            <label for="rent-own" class="text-secondary">Rent or Own Property*</label>
-            <input type="text" class="form-control" id="rent-own">
+          <div class="form-group randomcode">
+            <label for="randomcode" class="text-secondary">Enter code as seen:</label>
+            <input name="randomcode" type="text" class="form-control" id="codeentered">
+            <p id="codes"></p>
           </div>
-          <div class="form-group">
-            <label for="dealership" class="text-secondary">Dealership where car was purchased/leased*</label>
-            <input type="text" class="form-control" id="dealership">
+          <span id='code-error'></span>
+          <div class="contact-buttons">
+            <button type="reset" class="reset-btn ">Reset</button>
+            <button type="submit" class="primary-btn " id="submit" v-on:click="checkForm">Send</button>
           </div>
-          <div class="form-group">
-            <label for="miles-per-year" class="text-secondary">Miles driven per year*</label>
-            <input type="number" class="form-control" id="miles-per-year">
-          </div>
-          <div class="form-group">
-            <label for="utility-provider" class="text-secondary">Utility Provider*</label>
-            <input type="text" class="form-control" id="utility-provider">
-          </div>
-          <button type="submit" class="primary-btn ">SEND EMAIL</button>
         </form>
       </section>
+
+
+      
     </main>
     <footer>
       <div class="footer-content">
@@ -519,7 +526,7 @@
           <p>Westlake Village, CA 91361</p>
         </div>
         <div class="sectfooter-infoion footer-logo">
-          <img src="/assets/images/Electrify_your_EV.png" alt="">
+          <img src="/public/images/Electrify_your_EV.png" alt="">
         </div>
       </div>
       <div class="disclaimer">
@@ -540,6 +547,7 @@
     req.open("GET", "http://localhost:3000/user", true);
     req.send();
   </script>
+  <script src="/public/js/captcha.js"></script>
+  <script src="/public/js/contact-form.js"></script>
 </body>
-
 </html>
