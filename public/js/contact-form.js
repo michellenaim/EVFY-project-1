@@ -1,6 +1,11 @@
 // const emailRe =
 //   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+// const start = require("../../start");
+// const db = start.db;
+
+// const axios = require("axios");
+
 const form = new Vue({
   el: "#form",
   data: {
@@ -14,22 +19,12 @@ const form = new Vue({
     zip: null,
     phone: null,
     email: null,
+    catcha: null,
+    randomcode: null,
   },
   methods: {
     checkForm: function (e) {
       e.preventDefault();
-      if (
-        this.firstname &&
-        this.lastname &&
-        this.street &&
-        this.city &&
-        this.state &&
-        this.country &&
-        this.zip &&
-        this.phone &&
-        this.email
-      )
-        return true;
       this.errors = [];
       if (!this.firstname) this.errors.push("Please enter your first name.");
       if (!this.lastname) this.errors.push("Please enter your last name.");
@@ -40,12 +35,28 @@ const form = new Vue({
       if (!this.zip) this.errors.push("Please enter your zip code.");
       if (!this.phone) this.errors.push("Please enter your phone number.");
       if (!this.email) this.errors.push("Please enter your email.");
-      if (this.email) this.errors.push("Please enter a valid email.");
       if (this.phone && this.phone.length >= 1 && this.phone.length < 10)
         this.errors.push("Phone number should be 10 digits.");
       if (this.zip && this.zip.length != 5)
         this.errors.push("Zip code should be 5 digits.");
-      this.$ref.form.submit();
+
+      // axios
+      //   .post("http://localhost:3000/contact", newContact)
+      //   .then((response) => console.log(response))
+      //   .catch((error) => console.log(error));
+      // if (this.errors.length == 0) {
+      //   const custData = {
+      //     firstname: this.firstname,
+      //     lastname: this.lastname,
+      //     street: this.street,
+      //     city: this.city,
+      //     state: this.state,
+      //     country: this.country,
+      //     zip: this.zip,
+      //     phone: this.phone,
+      //     email: this.email,
+      //   };
+      // }
     },
   },
 });

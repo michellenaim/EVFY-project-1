@@ -1,16 +1,16 @@
-@import url("/public/css/shared/_fonts.css");
-@import url("/public/css/shared/_layout.css");
-@import url("/public/css/shared/_reset.css");
-@import url("/public/css/shared/_variables.css");
+@import url("./shared/_fonts.css");
+@import url("./shared/_layout.css");
+@import url("./shared/_reset.css");
+@import url("./shared/_variables.css");
 
-@import url("/public/css/components/button.css");
-@import url("/public/css/components/card.css");
-@import url("/public/css/components/inputs.css");
-@import url("/public/css/components/header.css");
-@import url("/public/css/components/footer.css");
-@import url("/public/css/components/menu.css");
+@import url("./components/button.css");
+@import url("./components/card.css");
+@import url("./components/inputs.css");
+@import url("./components/header.css");
+@import url("./components/footer.css");
+@import url("./components/menu.css");
 
-@import url("/public/css/sections.css");
+@import url("./sections.css");
 
 * {
   font-family: TTNormsPro;
