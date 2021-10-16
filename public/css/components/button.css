@@ -36,3 +36,29 @@
   box-shadow: 0px 0px 15px 5px rgba(199, 190, 190, 0.59);
   white-space: nowrap;
 }
++
+.secondary-btn {
+  width: max-content;
+  padding: 5px 20px;
+  color: white;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  /* box-shadow: 0px 0px 15px 5px rgba(199, 190, 190, 0.59); */
+  white-space: nowrap;
+}
+
+.secondary-btn:hover {
+  transform: scale(1.1);
+}
+
+.secondary-btn > a {
+  text-decoration: none !important;
+  color: white;
+}
+
+.action-menu .secondary-btn {
+  padding: 2px 20px;
+}
