@@ -1,0 +1,28 @@
+{
+  "name": "evfy-project-1",
+  "version": "1.0.0",
+  "description": "Project:",
+  "main": "index.js",
+  "dependencies": {
+    "onchange": "^7.1.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node-sass": "^4.14.1",
+    "parallelshell": "^3.0.1"
+  },
+  "scripts": {
+    "scss": "node-sass -o css/ css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michellenaim/EVFY-project-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michellenaim/EVFY-project-1/issues"
+  },
+  "homepage": "https://github.com/michellenaim/EVFY-project-1#readme"
+}
