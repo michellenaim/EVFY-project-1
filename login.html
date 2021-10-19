@@ -44,32 +44,21 @@
             </li>
             <li><a class="sub" href="#contact">Contact Us</a></li>
           </ul>
-          <div class="dropdown">
-            <img id = "profileImg" src="assets/images/andrea.jpg" alt="Avatar">
-            <div class="dropdown-content">
-              <a href="profile.html">Profile</a>
-              <a href="#">Log out</a>
-            </div>
+          <div class="action-menu">
+            <button class="primary-btn"><a href="login.html">Login</a></button>
+          </div> 
           <div class="hamburger-icon">
             <div class="hamburger"></div>
           </div>
         </header>
         <div class="card">
-            <div class="card-title">My Profile</div>
+            <div class="card-title">Log in</div>
             <form action="/register" method="POST"><br>
-                <label for="firstname">First Name:</label>
-                <input type="text" id="firstname" name="firstname"><br><br>
-                <label for="lastname">Last Name:</label>
-                <input type="text" id="lastname" name="lastname"><br><br>
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email"><br><br>
-                <label for="username">Username:</label>
+                <label for="username">Password:</label>
                 <input type="text" id="username" name="username"><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password"><br><br>
-                <label for="profilepicture">Profile Picture:</label>
-                <img hre="" width="100px" height="100px"><br><br>
-                <button class="btn primary-btn">Edit</button>
+                <button class="btn primary-btn">submit</button>
             </form>
           </div>
       </section>
