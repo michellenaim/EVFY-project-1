@@ -18,18 +18,18 @@ const form = new Vue({
   methods: {
     checkForm: function (e) {
       e.preventDefault();
-      if (
-        this.firstname &&
-        this.lastname &&
-        this.street &&
-        this.city &&
-        this.state &&
-        this.country &&
-        this.zip &&
-        this.phone &&
-        this.email
-      )
-        return true;
+      // if (
+      //   this.firstname &&
+      //   this.lastname &&
+      //   this.street &&
+      //   this.city &&
+      //   this.state &&
+      //   this.country &&
+      //   this.zip &&
+      //   this.phone &&
+      //   this.email
+      // ){
+      //   return true;}
       this.errors = [];
       if (!this.firstname) this.errors.push("Please enter your first name.");
       if (!this.lastname) this.errors.push("Please enter your last name.");
@@ -45,7 +45,8 @@ const form = new Vue({
         this.errors.push("Phone number should be 10 digits.");
       if (this.zip && this.zip.length != 5)
         this.errors.push("Zip code should be 5 digits.");
-      this.$ref.form.submit();
+      // this.$ref.form.submit();
+      console.log(this.firstname);
     },
   },
 });

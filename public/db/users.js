@@ -3,6 +3,8 @@ var records = [
   { id: 2, username: 'westcliffclass', password: 'birthday', displayName: 'WestCliff University', emails: [ { value: 'cliff@example.com' } ] }
 ];
 
+
+
 exports.findById = function(id, cb) {
   process.nextTick(function() {
     var idx = id - 1;

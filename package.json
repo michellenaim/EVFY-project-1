@@ -4,7 +4,8 @@
   "description": "Project:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon ./start.js"
   },
   "repository": {
     "type": "git",
@@ -17,13 +18,17 @@
   },
   "homepage": "https://github.com/michellenaim/EVFY-project-1#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "connect-ensure-login": "^0.1.1",
+    "dotenv": "^10.0.0",
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "express-session": "^1.16.1",
+    "http-auth": "^4.1.9",
     "mongoose": "^6.0.10",
     "morgan": "^1.9.1",
+    "nodemon": "^2.0.13",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.1.0"
