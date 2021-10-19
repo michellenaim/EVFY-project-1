@@ -371,7 +371,7 @@
       </section>
 
       <section id="contact">
-        <form class="contact-form" method="post" action="." @submit="checkForm" id="form" ref="form">
+        <form class="contact-form" method="POST" action="/form" id="form" ref="form">
           <h2 class="title">
             To learn more about the EVFY program, and to receive a Level 2 home charger, please fill out the form
             below.
@@ -426,7 +426,7 @@
           <span id='code-error'></span>
           <div class="contact-buttons">
             <button type="reset" class="reset-btn ">Reset</button>
-            <button type="submit" class="primary-btn " id="submit" v-on:click="checkForm">Send</button>
+            <input type="submit" value="Send" class="primary-btn " id="submit">
           </div>
         </form>
       </section>
@@ -462,7 +462,7 @@
       </div>
     </footer>
   </div>
-  <script src="./js/index.js"></script>
+  <script src="./js/hamburger-menu.js"></script>
   <script src="./js/captcha.js"></script>
   <script src="./js/contact-form.js"></script>
 </body>

@@ -1,11 +1,3 @@
-// const emailRe =
-//   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-// const start = require("../../start");
-// const db = start.db;
-
-// const axios = require("axios");
-
 const form = new Vue({
   el: "#form",
   data: {
@@ -40,23 +32,7 @@ const form = new Vue({
       if (this.zip && this.zip.length != 5)
         this.errors.push("Zip code should be 5 digits.");
 
-      // axios
-      //   .post("http://localhost:3000/contact", newContact)
-      //   .then((response) => console.log(response))
-      //   .catch((error) => console.log(error));
-      // if (this.errors.length == 0) {
-      //   const custData = {
-      //     firstname: this.firstname,
-      //     lastname: this.lastname,
-      //     street: this.street,
-      //     city: this.city,
-      //     state: this.state,
-      //     country: this.country,
-      //     zip: this.zip,
-      //     phone: this.phone,
-      //     email: this.email,
-      //   };
-      // }
+      // how do we submit after check??
     },
   },
 });

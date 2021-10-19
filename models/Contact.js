@@ -1,36 +1,36 @@
 const mongoose = require("mongoose");
 
 const contactSchema = new mongoose.Schema({
-  firstName: {
+  firstname: {
     type: String,
     trim: true,
   },
-  LastName: {
+  lastname: {
     type: String,
     trim: true,
   },
-  Street: {
+  street: {
     type: String,
   },
-  City: {
+  city: {
     type: String,
   },
-  State: {
+  state: {
     type: String,
   },
-  Country: {
+  country: {
     type: String,
   },
-  Zip: {
+  zip: {
     type: Number,
   },
-  CellPhone: {
+  phone: {
     type: Number,
   },
-  Email: {
+  email: {
     type: String,
   },
-  Code: {
+  randomcode: {
     type: String,
   },
 });
