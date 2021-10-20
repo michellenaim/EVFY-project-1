@@ -385,7 +385,7 @@
   justify-content: start;
   background: no-repeat center/100%
       linear-gradient(to bottom, black, 55%, #ffffff00),
-    no-repeat center/cover url("../images/Picture1.png");
+    no-repeat center/cover url("../images/iStock-943875208.jpg");
 }
 
 #sustainabilityLogo {
@@ -956,7 +956,7 @@
 
 #contact .contact-form {
   flex-basis: 70%;
-  width: 40%;
+  width: 50%;
   height: max-content;
   padding: 2.5rem;
   background-color: var(--bg_gray);
