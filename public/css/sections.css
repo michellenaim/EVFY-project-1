@@ -1,8 +1,7 @@
 /* mission section */
 #our-mission {
   position: relative;
-  background: no-repeat center/cover
-    url("../images/homepage-background.jpg");
+  background: no-repeat center/cover url("../images/homepage-background.jpg");
   background-position: 0% 100%;
   color: black;
   min-height: 50rem;
@@ -946,8 +945,7 @@
   align-items: flex-end;
   height: max-content;
   padding: 2.5rem;
-  background: no-repeat center/cover
-    url("../images/contact_us_background.jpg");
+  background: no-repeat center/cover url("../images/contact_us_background.jpg");
 }
 
 #contact .contact-form .title {

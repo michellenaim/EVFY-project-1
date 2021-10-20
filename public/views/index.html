@@ -206,49 +206,49 @@
 
       <section id="team-member">
         <div class="teamphoto">
-          <img src="./images/marco.jpg" alt="Marco" width="150px" />
+          <img src="../images/marco.jpg" alt="Marco" width="150px" />
           <div>
             <h5>Marco Terruzzin</h5>
             <p>Founder - CEO</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="./images/andrea.jpg" alt="Andrea" width="150px" />
+          <img src="../images/andrea.jpg" alt="Andrea" width="150px" />
           <div>
             <h5>Andrea Pedretti</h5>
             <p>Co-Founder - CTO</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="./images/julie.jpg" alt="Julie" width="150px" />
+          <img src="../images/julie.jpg" alt="Julie" width="150px" />
           <div>
             <h5>Julie Sparacio</h5>
             <p>VP, Marketing & Customer Growth</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="./images/andrzej.jpg" alt="Andrzej" width="150px" />
+          <img src="../images/andrzej.jpg" alt="Andrzej" width="150px" />
           <div>
             <h5>Andrzej Skoskiewicz</h5>
             <p>VP, Engineering</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="./images/daniel.jpg" alt="Marco" width="150px" />
+          <img src="../images/daniel.jpg" alt="Marco" width="150px" />
           <div>
             <h5>Daniel Han</h5>
             <p>VP, Strategy & BD</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="./images/laetitia.jpg" alt="laetitia" width="150px" />
+          <img src="../images/laetitia.jpg" alt="laetitia" width="150px" />
           <div>
             <h5>Laetitia Lee</h5>
             <p>VP, Product</p>
           </div>
         </div>
         <div class="teamphoto">
-          <img src="./images/gianromano.png" alt="gianromano" width="150px" />
+          <img src="../images/gianromano.png" alt="gianromano" width="150px" />
           <div>
             <h5>Gianromano Piconi</h5>
             <p>Director, Operations</p>
@@ -391,7 +391,7 @@
 
       <section id="partners">
         <div class="partner1" id="partner1">
-          <div class="partner-images">
+          <div class="partner.-images">
             <div></div>
             <div></div>
           </div>
@@ -414,14 +414,14 @@
               affordable quality wine for you to enjoy, day and night, as part of your active, healthy lifestyle.
             </p>
           </div>
-          <div class="partner-images">
+          <div class="partner.-images">
             <div></div>
             <div></div>
           </div>
         </div>
 
         <div class="partner3" id="partner3">
-          <div class="partner-images">
+          <div class="partner.-images">
             <div></div>
           </div>
           <div class="partner-text">
@@ -443,62 +443,58 @@
       </section>
 
       <section id="contact">
-        <form class="contact-form" method="post" @submit="checkForm" id="form" ref="form">
+        <form class="contact-form" method="POST" action="/form" id="form" ref="form">
           <h2 class="title">
             To learn more about the EVFY program, and to receive a Level 2 home charger, please fill out the form
             below.
           </h2>
-          <p v-if="errors.length" id="error-box">
-            <ul>
-              <li v-for="error in errors" id="contact-errors">{{ error }}</li>
-            </ul>
-          </p>
+          <p id="errorname"></p>
           <div class="form-group">
             <label for="firstname" class="text-secondary">First name</label>
-            <input name="firstname" type="text" class="form-control" id="first-name" v-model="firstname">
+            <input name="firstname" type="text" class="form-control" id="first-name" onblur="checkFirstName(this.value)">
           </div>
           <div class="form-group">
             <label for="lastname" class="text-secondary">Last name</label>
-            <input name="lastname" type="text" class="form-control" id="last-name" v-model="lastname">
+            <input name="lastname" type="text" class="form-control" id="last-name" onblur="checkLastName(this.value)">
           </div>
           <p id="address-title">Address:</p>
           <div class="form-group">
             <label for="street" class="text-secondary">Street</label>
-            <input name="street" type="text" class="form-control" id="street" v-model="street">
+            <input name="street" type="text" class="form-control" id="street" onblur="checkStreet(this.value)">
           </div>
           <div class="form-group">
             <label for="city" class="text-secondary">City</label>
-            <input name="city" type="text" class="form-control" id="city" v-model="city">
+            <input name="city" type="text" class="form-control" id="city" onblur="checkCity(this.value)">
           </div>
           <div class="form-group">
             <label for="state" class="text-secondary">State</label>
-            <input name="state" type="text" class="form-control" id="state" v-model="state">
+            <input name="state" type="text" class="form-control" id="state" onblur="checkState(this.value)">
           </div>
           <div class="form-group">
             <label for="country" class="text-secondary">Country</label>
-            <input name="country" type="text" class="form-control" id="country" v-model="country">
+            <input name="country" type="text" class="form-control" id="country" onblur="checkCountry(this.value)">
           </div>
           <div class="form-group">
             <label for="zip" class="text-secondary">Zip</label>
-            <input name="zip" type="number" class="form-control" id="zip" v-model="zip">
+            <input name="zip" type="number" class="form-control" id="zip" onblur="checkZip(this.value)">
           </div>
           <div class="form-group">
             <label for="phone" class="text-secondary">Cell phone</label>
-            <input name="phone" type="number" class="form-control" id="phone" v-model="phone">
+            <input name="phone" type="number" class="form-control" id="phone" onblur="checkPhone(this.value)">
           </div>
           <div class="form-group">
             <label for="email" class="text-secondary">Email</label>
-            <input name="email" type="email" class="form-control" id="email" v-model="email">
+            <input name="email" type="email" class="form-control" id="email" onblur="checkEmail(this.value)">
           </div>
           <div class="form-group randomcode">
             <label for="randomcode" class="text-secondary">Enter code as seen:</label>
-            <input name="randomcode" type="text" class="form-control" id="codeentered">
+            <input name="randomcode" type="text" class="form-control" id="codeentered" onblur="checkRandomCode(this.value)">
             <p id="codes"></p>
           </div>
           <span id='code-error'></span>
           <div class="contact-buttons">
             <button type="reset" class="reset-btn ">Reset</button>
-            <button type="submit" class="primary-btn " id="submit" v-on:click="checkForm">Send</button>
+            <button type="submit" class="primary-btn " id="submit">Send</button>
           </div>
         </form>
       </section>
@@ -526,7 +522,7 @@
           <p>Westlake Village, CA 91361</p>
         </div>
         <div class="sectfooter-infoion footer-logo">
-          <img src="./images/Electrify_your_EV.png" alt="">
+          <img src="../images/Electrify_your_EV.png" alt="">
         </div>
       </div>
       <div class="disclaimer">
@@ -549,5 +545,9 @@
   </script>
   <script src="./js/captcha.js"></script>
   <script src="./js/contact-form.js"></script>
+  <script src="../js/hamburger-menu.js"></script>
+  <script src="../js/captcha.js"></script>
+  <script src="../js/contact-form.js"></script>
+  <script src="../js/checkForm.js"></script>
 </body>
 </html>

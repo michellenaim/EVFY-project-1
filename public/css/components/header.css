@@ -17,7 +17,7 @@
   height: 100px;
   width: 100px;
   background: no-repeat center/40%
-    url("../images/logo_transparent_white.png");
+    url("../../images/logo_transparent_white.png");
 }
 
 .top-nav .action-menu {
@@ -37,7 +37,7 @@
   .top-nav .logo {
     flex-basis: 20%;
     background: no-repeat center/70%
-      url("../images/logo_transparent_white.png");
+      url("../../imageslogo_transparent_white.png");
   }
 
   .top-nav .action-menu {
@@ -49,6 +49,6 @@
   .top-nav .logo {
     flex-basis: 20%;
     background: no-repeat center/50%
-      url("../images/logo_transparent_white.png");
+      url("../../imageslogo_transparent_white.png");
   }
 }
