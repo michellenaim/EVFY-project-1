@@ -14,8 +14,7 @@
   <div class="wrapper">
     <main>
       <div class="contact-us-card">
-        <div>Contact Us</div>
-        <p>1-877-GET-EVFY</p>
+        <div><button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button></div>
       </div>
       <section id="our-mission">
         <header class="top-nav">
@@ -46,7 +45,6 @@
             </li>
             <li><a class="sub" href="#contact">Contact Us</a></li>
           </ul>
-
           <div class="action-menu">
             <button id='loginBtn' class="secondary-btn"><a href="#login">Login</a></button>
             <button id='registerBtn' class="primary-btn"><a href="#register">Sign up!</a></button>
@@ -526,12 +524,12 @@
         </div>
       </div>
       <div class="disclaimer">
-        <p>© 2021 EVFY All right reserved. Privacy Policy and Terms of Use</p>
+        <p>© 2021 EVFY All right reserved. <a href="https://www.ev-fy.com/privacy-policy">Privacy Policy</a> and <a href="https://www.ev-fy.com/terms-of-use">Terms of Use</a></p>
       </div>
     </footer>
   </div>
-  <script src="./js/index.js"></script>
-  <script src="./js/login.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/login.js"></script>
   <script>
     const req = new XMLHttpRequest();
     req.onreadystatechange = function() {
@@ -543,11 +541,12 @@
     req.open("GET", "http://localhost:3000/user", true);
     req.send();
   </script>
-  <script src="./js/captcha.js"></script>
-  <script src="./js/contact-form.js"></script>
+  <script src="../js/captcha.js"></script>
+  <script src="../js/contact-form.js"></script>
   <script src="../js/hamburger-menu.js"></script>
   <script src="../js/captcha.js"></script>
   <script src="../js/contact-form.js"></script>
   <script src="../js/checkForm.js"></script>
+  <script src="../js/top.js"></script>
 </body>
 </html>
