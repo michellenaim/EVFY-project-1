@@ -956,7 +956,7 @@
 
 #contact .contact-form {
   flex-basis: 70%;
-  width: 50%;
+  width: 40%;
   height: max-content;
   padding: 2.5rem;
   background-color: var(--bg_gray);
