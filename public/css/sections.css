@@ -367,7 +367,6 @@
 }
 
 #teamMember h5 {
-  color: #8cc63f;
   font-size: var(--font_size-details);
   font-family: var(--font-family);
 }
@@ -375,6 +374,10 @@
 #teamMember p {
   font-size: var(--font_size-details);
   font-family: var(--font-family);
+}
+
+.teamphoto h5{
+  color: #8cc63f;
 }
 
 /* sustainbility section */
@@ -811,6 +814,10 @@
   }
 }
 
+.sustainability-table thead tr{
+  background-color: var(--c_dark-green);
+}
+
 /* Partners Section*/
 #partners-section .partners-main-title {
   display: flex;
@@ -986,4 +993,9 @@
     flex-basis: 100%;
     width: 100%;
   }
+}
+
+
+.sustainability-table thead tr {
+  background-color: var(--c_dark-green);
 }
