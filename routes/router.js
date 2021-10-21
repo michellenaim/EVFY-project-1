@@ -19,7 +19,7 @@ router.get("/contact", (req, res) => {
 // add validation here
 
 router.post(
-  "/form",
+  "/",
   [
     check("firstname")
       .isLength({ min: 1 })
@@ -52,7 +52,8 @@ router.post(
       contact
         .save()
         .then(() => {
-          res.sendFile(path.join(__dirname, "../public/views/", "index.html"));
+          res.status(204).send();
+          // res.sendFile(path.join(__dirname, "../public/views/", "index.html"));
         })
         .catch((err) => {
           console.log(err);

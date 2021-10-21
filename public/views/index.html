@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
 
-<body ontouchstart="">
+<body ontouchstart="" onload="disableButton(true)">
   <div class="wrapper">
     <main>
       <div class="contact-us-card">
@@ -441,7 +441,7 @@
       </section>
 
       <section id="contact">
-        <form class="contact-form" method="POST" action="/form" id="form" ref="form">
+        <form class="contact-form" method="POST" action="/" id="form" ref="form" onsubmit="myFunction()">
           <h2 class="title">
             To learn more about the EVFY program, and to receive a Level 2 home charger, please fill out the form
             below.
@@ -492,9 +492,11 @@
           <span id='code-error'></span>
           <div class="contact-buttons">
             <button type="reset" class="reset-btn ">Reset</button>
-            <button type="submit" class="primary-btn " id="submit">Send</button>
+            <button type="submit" class="primary-btn " id="contact-submit">Send</button>
           </div>
         </form>
+
+        <h1 id="contact-thanks">Thank you for submitting your contact details!</h1>
       </section>
 
 
@@ -542,11 +544,11 @@
     req.send();
   </script>
   <script src="../js/captcha.js"></script>
-  <script src="../js/contact-form.js"></script>
   <script src="../js/hamburger-menu.js"></script>
   <script src="../js/captcha.js"></script>
   <script src="../js/contact-form.js"></script>
   <script src="../js/checkForm.js"></script>
   <script src="../js/top.js"></script>
+  <script src="../js/submit.js"></script>
 </body>
 </html>
