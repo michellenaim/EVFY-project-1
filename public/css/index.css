@@ -88,3 +88,7 @@ main {
     max-width: 100vw;
   }
 }
+
+.hidden {
+  display: none;
+}

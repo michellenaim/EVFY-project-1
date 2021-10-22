@@ -19,6 +19,14 @@
     width: max-content; /* Could be more or less, depending on screen size */
 }
 
+.profile-content {
+    background-color: #fefefe;
+    margin: 20vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: max-content; /* Could be more or less, depending on screen size */
+}
+
 /* The Close Button */
 .close {
     color: #aaa;
@@ -102,3 +110,9 @@
     to {opacity: 1;}
 }
 
+/* Welcome container */
+#welcome-container{
+    text-align: center;
+    margin-top: 8em;
+    margin-bottom: -8em;
+}

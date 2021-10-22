@@ -28,6 +28,7 @@
     "express-session": "^1.16.1",
     "express-validator": "^6.13.0",
     "http-auth": "^4.1.9",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.10",
     "morgan": "^1.9.1",
     "nodemon": "^2.0.13",
