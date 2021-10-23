@@ -1,0 +1,12 @@
+{
+    "name": "EVFY",
+    "short_name": "EVFY",
+    "icons": {
+        "src": "public/images/logo_white_background.png",
+        "size": "128x128",
+        "type": "image/png"
+    },
+    "lang": "en-US",
+    "start_url":"/index.html",
+    "display":"standalone"
+}
