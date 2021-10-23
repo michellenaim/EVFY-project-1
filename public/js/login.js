@@ -141,12 +141,11 @@ async function loginUser(event) {
     registerBtn.style.display = "none";
     profileMenu.style.display = "block"; 
 
-    document.getElementById("profileBtn").innerText = parseJwt(result.data).firstname + "...";
+    document.getElementById("username-nav").innerText = parseJwt(result.data).firstname;
 
     let greetName = parseJwt(localStorage.getItem('token')).firstname;
     document.getElementById("welcome-message").innerText = `Good ${timeOfDay()}, ${greetName}. Welcome back!`;
     document.getElementById("welcome-container").style.display = "flex";
-
   } else {
     const errorMessage = document.getElementById("login-error-message");
     localStorage.clear();

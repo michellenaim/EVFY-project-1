@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <title>EVFY</title>
   <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 
 <body ontouchstart="" onload="disableButton(true)">
@@ -52,7 +53,7 @@
             </div>
             <ul id="profileMenu" class="menu profileMenu hidden">
               <li>
-                <button id='profileBtn' class="secondary-btn"><a href="#profile">Username</a></button>
+                <button id='profileBtn' class="secondary-btn"><i class="fas fa-user-circle"></i><a href="#profile" id="username-nav">Username</a></button>
                 <div class="sub-menu">
                   <a id="profileLink" href="#Profile">View profile</a>
                   <a id="logoutLink" href="#logout">Log out</a>
