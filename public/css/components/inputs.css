@@ -52,6 +52,11 @@
   padding: 0.2rem;
 }
 
+#errorname {
+  color: red;
+  padding: 1rem;
+}
+
 #contact-thanks {
   font-size: 60px;
   margin-top: 3%;

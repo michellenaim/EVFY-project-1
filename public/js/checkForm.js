@@ -40,59 +40,82 @@ function checkLastName(value) {
 
 function checkStreet(value) {
   if (value.trim() == "") {
-    document.getElementById("errorname").innerHTML = "Please enter your street";
+    var tag = document.createElement("p");
+    var text = document.createTextNode("Please enter your street");
+    tag.appendChild(text);
+    var element = document.getElementById("errorname");
+    element.appendChild(tag);
   }
 }
 
 function checkCity(value) {
   if (value.trim() == "") {
-    document.getElementById("errorname").innerHTML = "Please enter your city";
+    var tag = document.createElement("p");
+    var text = document.createTextNode("Please enter your city");
+    tag.appendChild(text);
+    var element = document.getElementById("errorname");
+    element.appendChild(tag);
   }
 }
 
 function checkState(value) {
   if (value.trim() == "") {
-    document.getElementById("errorname").innerHTML = "Please enter your state";
+    var tag = document.createElement("p");
+    var text = document.createTextNode("Please enter your state");
+    tag.appendChild(text);
+    var element = document.getElementById("errorname");
+    element.appendChild(tag);
   }
 }
 
 function checkCountry(value) {
   if (value.trim() == "") {
-    document.getElementById("errorname").innerHTML =
-      "Please enter your country";
+    var tag = document.createElement("p");
+    var text = document.createTextNode("Please enter your country");
+    tag.appendChild(text);
+    var element = document.getElementById("errorname");
+    element.appendChild(tag);
   }
 }
 
 function checkZip(value) {
   if (value.trim() == "" && value.length != 5) {
-    document.getElementById("errorname").innerHTML =
-      "Please enter a valid zip code";
+    var tag = document.createElement("p");
+    var text = document.createTextNode("Please enter a valid zip code");
+    tag.appendChild(text);
+    var element = document.getElementById("errorname");
+    element.appendChild(tag);
   }
 }
 
 function checkPhone(value) {
   if (value.trim() == "" && value.length != 10) {
-    document.getElementById("errorname").innerHTML =
-      "Please enter a valid phone number";
+    var tag = document.createElement("p");
+    var text = document.createTextNode("Please enter a valid phone number");
+    tag.appendChild(text);
+    var element = document.getElementById("errorname");
+    element.appendChild(tag);
   }
 }
 
 function checkEmail(value) {
   if (value.trim() == "") {
-    document.getElementById("errorname").innerHTML = "Please enter your email";
-  }
+    var tag = document.createElement("p");
+    var text = document.createTextNode("Please enter your email");
+    tag.appendChild(text);
+    var element = document.getElementById("errorname");
+    element.appendChild(tag);  }
 }
 
 function checkRandomCode(value) {
   var charset1 = value.trim();
   var charset2 = code.trim();
 
-  if (charset1 != charset2) {
-    document.getElementById("errorname").innerHTML =
-      "Please enter correct code as seen";
-  }
-  if (value.trim() == "") {
-    document.getElementById("errorname").innerHTML =
-      "Please enter code as seen";
+  if (charset1 != charset2 || value.trim() == "") {
+        var tag = document.createElement("p");
+    var text = document.createTextNode("Please enter correct code as seen");
+    tag.appendChild(text);
+    var element = document.getElementById("errorname");
+    element.appendChild(tag);
   }
 }
