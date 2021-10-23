@@ -60,11 +60,16 @@ router.post(
           res.send("Sorry! Something went wrong.");
         });
     } else {
-      // res.sendFile(path.join(__dirname, "../public/views/", "index.html"), {
-      //   errors: errors.array(),
-      //   data: req.body,
-      // });
-      // How do we render the errors?
+		// return res.json({
+		// 	status: 'error',
+		// 	error: errors.array(),
+		// 	data: req.body,
+		// })
+
+    //   res.sendFile(path.join(__dirname, "../public/views/", "index.html"), {
+    //     errors: errors.array(),
+    //     data: req.body,
+    //   });
     }
   }
 );
