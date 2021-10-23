@@ -52,6 +52,24 @@
   padding: 0.2rem;
 }
 
+#errorname {
+  color: red;
+  padding: 1rem;
+}
+
+#contact-thanks {
+  font-size: 60px;
+  margin-top: 3%;
+  font-weight: bold;
+  font-family: var(--font-family);
+  margin-right: 5%;
+  text-align: center;
+  width: 27rem;
+  background: rgb(255,255,255,0.5);
+  padding: 2rem;
+  display: none;
+}
+
 @media (max-width: 768px) {
   .form-group label {
     flex-basis: 25%;
