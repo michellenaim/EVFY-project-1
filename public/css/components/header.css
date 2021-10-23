@@ -18,6 +18,7 @@
   width: 100px;
   background: no-repeat center/70%
     url("../../images/logo_transparent_white.png");
+    cursor: pointer;
 }
 
 .top-nav .action-menu {
