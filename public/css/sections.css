@@ -815,7 +815,7 @@
 }
 
 .sustainability-table thead tr{
-  background-color: var(--c_dark-green);
+  background-color: var(--c_green) !important;
 }
 
 /* Partners Section*/
