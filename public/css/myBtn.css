@@ -79,4 +79,12 @@
   border-radius: 50%;
 }
 
+.disclaimer a:link {
+  color: var(--c_green);
+}
+
+.disclaimer a:visited {
+  color: var(--c_green);
+}
+
 /*# sourceMappingURL=myBtn.css.map */
