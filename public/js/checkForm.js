@@ -79,7 +79,7 @@ function checkCountry(value) {
 }
 
 function checkZip(value) {
-  if (value.trim() == "" && value.length != 5) {
+  if (value.trim() == "" || value.length != 5) {
     var tag = document.createElement("p");
     var text = document.createTextNode("Please enter a valid zip code");
     tag.appendChild(text);
@@ -89,7 +89,7 @@ function checkZip(value) {
 }
 
 function checkPhone(value) {
-  if (value.trim() == "" && value.length != 10) {
+  if (value.trim() == "" || value.length != 10) {
     var tag = document.createElement("p");
     var text = document.createTextNode("Please enter a valid phone number");
     tag.appendChild(text);
@@ -112,7 +112,7 @@ function checkRandomCode(value) {
   var charset2 = code.trim();
 
   if (charset1 != charset2 || value.trim() == "") {
-        var tag = document.createElement("p");
+    var tag = document.createElement("p");
     var text = document.createTextNode("Please enter correct code as seen");
     tag.appendChild(text);
     var element = document.getElementById("errorname");

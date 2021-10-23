@@ -143,6 +143,10 @@ async function loginUser(event) {
 
     document.getElementById("profileBtn").innerText = parseJwt(result.data).firstname + "...";
 
+    let greetName = parseJwt(localStorage.getItem('token')).firstname;
+    document.getElementById("welcome-message").innerText = `Good ${timeOfDay()}, ${greetName}. Welcome back!`;
+    document.getElementById("welcome-container").style.display = "block";
+
   } else {
     const errorMessage = document.getElementById("login-error-message");
     localStorage.clear();
@@ -232,11 +236,6 @@ const parseJwt = (token) => {
 
 // Get user
 try {
-  let greetName = parseJwt(localStorage.getItem('token')).firstname;
-
-  // Insert welcome message
-  document.getElementById("welcome-message").innerText = `Good ${timeOfDay()}, ${greetName}. Welcome back!`;
-  document.getElementById("welcome-container").style.display = "block";
 
   // switch login/profile UI
   loginBtn.style.display = "none";

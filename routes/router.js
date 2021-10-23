@@ -108,7 +108,7 @@ router.post('/login', async (req, res) => {
         email: user.email
 			},
 			JWT_SECRET,
-      {expiresIn: '60s'}
+      {expiresIn: '120s'}
 		);
     req.session.token = token;
 		return res.json({ status: 'ok', data: token })
@@ -203,23 +203,11 @@ router.post(
         .save()
         .then(() => {
           res.status(204).send();
-          // res.sendFile(path.join(__dirname, "../public/views/", "index.html"));
         })
         .catch((err) => {
           res.send("Sorry! Something went wrong.");
         });
-    } else {
-		// return res.json({
-		// 	status: 'error',
-		// 	error: errors.array(),
-		// 	data: req.body,
-		// })
-
-    //   res.sendFile(path.join(__dirname, "../public/views/", "index.html"), {
-    //     errors: errors.array(),
-    //     data: req.body,
-    //   });
-    }
+    } 
   }
 );
 

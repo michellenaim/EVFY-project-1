@@ -62,3 +62,7 @@
 .action-menu .secondary-btn {
   padding: 2px 20px;
 }
+
+.login-home {
+  display: flex;
+}

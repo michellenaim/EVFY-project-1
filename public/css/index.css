@@ -47,10 +47,10 @@ main {
 }
 
 #myBtn {
-  width: 100px;
+  width: 101px;
   padding: 0.5%;
   position: fixed;
-  top: 70%;
+  top: 95%;
   right: 20px;
   background-color: var(--c_green);
   text-align: center;
@@ -59,6 +59,7 @@ main {
   border: none;
   margin: inherit;
   box-shadow: 0px 0px 15px 5px rgba(199, 190, 190, 0.59);
+  cursor: pointer;
 }
 
 #myBtn {

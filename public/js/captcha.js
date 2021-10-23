@@ -33,15 +33,63 @@ function disableButton(btnvalue) {
   }
 }
 
+var firstname1 = document.getElementById("firstname");
+firstname1.addEventListener("input", evaluateCode);
+
+var lastname1 = document.getElementById("lastname");
+lastname1.addEventListener("input", evaluateCode);
+
+var street1 = document.getElementById("street");
+street1.addEventListener("input", evaluateCode);
+
+var city1 = document.getElementById("city");
+city1.addEventListener("input", evaluateCode);
+
+var state1 = document.getElementById("state");
+state1.addEventListener("input", evaluateCode);
+
+var country1 = document.getElementById("country");
+country1.addEventListener("input", evaluateCode);
+
+var zip1 = document.getElementById("zip");
+zip1.addEventListener("input", evaluateCode);
+
+var phone1 = document.getElementById("phone");
+phone1.addEventListener("input", evaluateCode);
+
+var email1 = document.getElementById("email");
+email1.addEventListener("input", evaluateCode);
+
 var codebox = document.getElementById("codeentered");
 codebox.addEventListener("input", evaluateCode);
 
 function evaluateCode() {
+  let firstname = document.getElementById("firstname").value;
+  let lastname = document.getElementById("lastname").value;
+  let street = document.getElementById("street").value;
+  let city = document.getElementById("city").value;
+  let state = document.getElementById("state").value;
+  let country = document.getElementById("country").value;
+  let zip = document.getElementById("zip").value;
+  let phone = document.getElementById("phone").value;
+  let email = document.getElementById("email").value;
   getCode = document.getElementById("codeentered").value;
   var charset1 = getCode.trim();
   var charset2 = code.trim();
 
-  if (charset1.length == charset2.length && charset1 == charset2) {
+  if (
+    charset1.length == charset2.length &&
+    charset1 == charset2 &&
+    firstname.length != 0 &&
+    lastname.length != 0 &&
+    street.length != 0 &&
+    city.length != 0 &&
+    state.length != 0 &&
+    country.length != 0 &&
+    zip.length == 5 &&
+    phone.length == 10 &&
+    email.length != 0
+  ) {
     disableButton(false);
   }
 }
